@@ -15,7 +15,7 @@ function App() {
   const d9 = require("./digits/9.png");
   const dc = require("./digits/c.png");
 
-  let images = new Array(d0, d1, d2, d3, d4, d5, d6, d7, d8, d9);
+  const images = new Array(d0, d1, d2, d3, d4, d5, d6, d7, d8, d9);
   const [hour1, setHour1] = useState(images[0]);
   const [hour2, setHour2] = useState(images[0]);
   const [minute1, setMinute1] = useState(images[0]);
