@@ -1,11 +1,20 @@
-.App {
+.Time {
 display: flex;
-  background-color:#1A1A1A	;
+background-color:#1A1A1A	;
 align-items: center;
 justify-content: center;
-height: 50em;
+height: 20em;
+margin-left: auto;
+margin-right: auto;
+}
+
+.Date{
+  height:10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .images {
-  height: 10vh;
+  height: 120px;
 }

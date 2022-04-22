@@ -23,9 +23,12 @@ function App() {
   const [second1, setSecond1] = useState(images[0]);
   const [second2, setSecond2] = useState(images[0]);
 
+  const [currentDate, setCurrentDate] = useState("");
+
   const interval = () => {
     setInterval(function () {
       let date = new Date();
+      setCurrentDate(String(date));
       let hour = String(date.getHours());
       let minute = String(date.getMinutes());
       let second = String(date.getSeconds());
@@ -62,14 +65,19 @@ function App() {
 
   return (
     <div className="App">
-      <img id="hour1" className="images" alt="d0" src={hour1} />
-      <img id="hour2" className="images" alt="d0" src={hour2} />
-      <img id="colunm1" className="images" alt="dc" src={dc} />
-      <img id="minute1" className="images" alt="d0" src={minute1} />
-      <img id="minute2" className="images" alt="d0" src={minute2} />
-      <img id="colunm2" className="images" alt="dc" src={dc} />
-      <img id="second1" className="images" alt="d0" src={second1} />
-      <img id="second2" className="images" alt="d0" src={second2} />
+      <div className="Date" style={{ color: "red" }}>
+        {currentDate}
+      </div>
+      <div className="Time">
+        <img id="hour1" className="images" alt="d0" src={hour1} />
+        <img id="hour2" className="images" alt="d0" src={hour2} />
+        <img id="colunm1" className="images" alt="dc" src={dc} />
+        <img id="minute1" className="images" alt="d0" src={minute1} />
+        <img id="minute2" className="images" alt="d0" src={minute2} />
+        <img id="colunm2" className="images" alt="dc" src={dc} />
+        <img id="second1" className="images" alt="d0" src={second1} />
+        <img id="second2" className="images" alt="d0" src={second2} />
+      </div>
     </div>
   );
 }
