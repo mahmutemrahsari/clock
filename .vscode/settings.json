@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2a150aad-e3cb-4116-a828-b0439278afaf/resourceGroups/powershellwebapp/providers/Microsoft.Web/sites/aznewpwrshllwebapp1122",
+    "appService.deploySubpath": "build"
+}

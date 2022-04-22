@@ -1,13 +1,11 @@
 .App {
-  text-align: center;
+display: flex;
   background-color:#1A1A1A	;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+align-items: center;
+justify-content: center;
+height: 50em;
 }
 
 .images {
-  height: 120px;
+  height: 10vh;
 }
